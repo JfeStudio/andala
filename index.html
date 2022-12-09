@@ -15,7 +15,9 @@
   </head>
   <body>
     <!-- top navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav
+      class="navbar navbar-expand-lg py-3 border navbar-light bg-slate-50 fixed-top"
+    >
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -81,79 +83,153 @@
     </nav>
     <!-- offcanvas left/sidebar -->
     <div
-      class="offcanvas offcanvas-start sidebar-nav bg-dark"
+      class="offcanvas offcanvas-start sidebar-nav bg-slate-50"
       tabindex="-1"
       id="sidebar"
     >
       <div class="offcanvas-body p-0">
-        <nav class="navbar-dark">
-          <ul class="navbar-nav">
+        <nav class="navbar-light">
+          <ul class="navbar-nav pt-4">
             <li>
-              <div class="text-muted small fw-bold text-uppercase px-3">
-                CORE
+              <div
+                class="d-flex align-items-center justify-content-between text-muted small bg-blue-500 rounded-3 mx-2 p-3"
+              >
+                <div>
+                  <span class="text-light">Balance</span>
+                  <a href="#" class="nav-link py-1 fw-bold active">
+                    <!-- <span class="me-2"><i class="bi bi-speedometer2"></i></span> -->
+                    <span class="fs-5 text-light">$12.577.00</span>
+                  </a>
+                </div>
+                <i class="text-light bi bi-three-dots"></i>
               </div>
             </li>
+            <li class="my-3"><hr class="dropdown-divider bg-slate-400" /></li>
             <li>
-              <a href="#" class="nav-link px-3 active">
-                <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                <span>Dashboard</span>
-              </a>
-            </li>
-            <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
-            <li>
-              <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+              <div class="text-muted small fw-bold text-uppercase px-4 mb-3">
                 Interface
               </div>
+              <div class="bg-soft-dark mx-2 px-3 mb-1 rounded-3">
+                <a href="#" class="nav-link fw-bold text-light">
+                  <span class="me-2 text-light"
+                    ><i class="bi bi-speedometer"></i
+                  ></span>
+                  <span>Dashboard</span>
+                </a>
+              </div>
+              <div>
+                <a
+                  class="nav-link px-4 sidebar-link mb-1"
+                  data-bs-toggle="collapse"
+                  href="#layouts"
+                >
+                  <span class="me-2"><i class="bi bi-house-fill"></i></span>
+                  <span>Properties</span>
+                  <span class="ms-auto">
+                    <span class="right-icon">
+                      <i class="bi bi-chevron-down"></i>
+                    </span>
+                  </span>
+                </a>
+                <div class="collapse" id="layouts">
+                  <ul class="navbar-nav ps-3">
+                    <li>
+                      <a href="#" class="nav-link px-4">
+                        <span class="me-2">
+                          <i class="bi bi-house"></i>
+                        </span>
+                        <span>Properties 1</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link px-4">
+                        <span class="me-2">
+                          <i class="bi bi-house"></i>
+                        </span>
+                        <span>Properties 2</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li>
+              <a href="#" class="nav-link px-4 mb-1">
+                <span class="me-2"><i class="bi bi-wallet-fill"></i></span>
+                <span>Insurance</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-4 mb-1">
+                <span class="me-2"><i class="bi bi-pie-chart-fill"></i></span>
+                <span>Performance</span>
+              </a>
+            </li>
+            <div>
               <a
-                class="nav-link px-3 sidebar-link"
+                class="nav-link px-4 sidebar-link"
                 data-bs-toggle="collapse"
-                href="#layouts"
+                href="#account"
               >
-                <span class="me-2"><i class="bi bi-layout-split"></i></span>
-                <span>Layouts</span>
+                <span class="me-2"><i class="bi bi-person-circle"></i></span>
+                <span>Account</span>
                 <span class="ms-auto">
                   <span class="right-icon">
                     <i class="bi bi-chevron-down"></i>
                   </span>
                 </span>
               </a>
-              <div class="collapse" id="layouts">
+              <div class="collapse" id="account">
                 <ul class="navbar-nav ps-3">
                   <li>
-                    <a href="#" class="nav-link px-3">
-                      <span class="me-2"
-                        ><i class="bi bi-speedometer2"></i
-                      ></span>
-                      <span>Dashboard</span>
+                    <a href="#" class="nav-link px-4">
+                      <span class="me-2"><i class="bi bi-person"></i></span>
+                      <span>Users 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-4">
+                      <span class="me-2"><i class="bi bi-person"></i></span>
+                      <span>Users 2</span>
                     </a>
                   </li>
                 </ul>
               </div>
-            </li>
+            </div>
+            <li class="my-3"><hr class="dropdown-divider bg-slate-400" /></li>
             <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                <span>Pages</span>
-              </a>
-            </li>
-            <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
-            <li>
-              <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+              <div class="text-muted small fw-bold text-uppercase px-4 mb-3">
                 Addons
               </div>
             </li>
             <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-graph-up"></i></span>
+              <a href="#" class="nav-link px-4 mb-1">
+                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
                 <span>Charts</span>
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3">
+              <a href="#" class="nav-link px-4">
                 <span class="me-2"><i class="bi bi-table"></i></span>
                 <span>Tables</span>
+              </a>
+            </li>
+            <li class="my-3"><hr class="dropdown-divider bg-slate-400" /></li>
+            <li>
+              <div class="text-muted small fw-bold text-uppercase px-4 mb-3">
+                Preferences
+              </div>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-4 mb-1">
+                <span class="me-2"><i class="bi bi-gear-wide"></i></span>
+                <span>Setting</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link px-4">
+                <span class="me-2"><i class="bi bi-info-circle-fill"></i></span>
+                <span>Help Center</span>
               </a>
             </li>
           </ul>
@@ -162,7 +238,7 @@
     </div>
     <!-- offcanvas right/content -->
     <main class="mt-5 pt-3">
-      <div class="container-fluid">
+      <div class="container-fluid mt-3">
         <div class="row">
           <div class="col-md-12">
             <h4>Dashboard</h4>
@@ -181,7 +257,7 @@
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <div class="card bg-warning text-dark h-100">
+            <div class="card bg-warning text-sbg-slate-400 h-100">
               <div class="card-body py-5">Warning Card</div>
               <div class="card-footer d-flex">
                 View Details

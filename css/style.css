@@ -5,8 +5,49 @@ button {
 }
 :root {
   --offcanvas-width: 270px;
-  --topNavbarHeight: 56px;
+  --topNavbarHeight: 74px;
+  --slate-50: #f8fafc;
+  --slate-400: #94a3b8;
+  --soft-blue: #bfdbfe;
+  --violet-100: #ede9fe;
+  --violet-400: #c084fc;
+  --violet-300: #d8b4fe;
+  --gray-500: #6b7280;
+  --blue-300: #bfdbfe;
+  --blue-500: #3b82f6;
 }
+/* custom color */
+.bg-soft-blue {
+  background-color: var(--soft-blue);
+}
+.bg-slate-50 {
+  background-color: var(--slate-50);
+}
+.bg-slate-400 {
+  background-color: var(--slate-400);
+}
+.bg-violet-100 {
+  background-color: var(--violet-100);
+}
+.bg-violet-400 {
+  background-color: var(--violet-400);
+}
+.bg-violet-300 {
+  background-color: var(--violet-300);
+}
+.text-gray-500 {
+  color: var(--gray-500);
+}
+.bg-soft-dark {
+  background-color: #1e293b;
+}
+.bg-blue-300 {
+  background-color: var(--blue-300);
+}
+.bg-blue-500 {
+  background-color: var(--blue-500);
+}
+/* end */
 .sidebar-nav {
   width: var(--offcanvas-width);
 }
